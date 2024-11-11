@@ -1,6 +1,6 @@
-package cediackermann.main.n1;
+package cediackermann.n1;
 
-public class main {
+public class Main {
 
     public static void main(String[] args) {
         Toilet toilet = new Toilet();
