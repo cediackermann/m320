@@ -1,0 +1,2 @@
+# use the local JDK for everything
+build --tool_java_runtime_version=remote_jdk11

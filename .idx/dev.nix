@@ -11,6 +11,10 @@
     # pkgs.python311Packages.pip
     # pkgs.nodejs_20
     # pkgs.nodePackages.nodemon
+    pkgs.bazel
+    pkgs.bazel-buildtools
+    pkgs.jdk11
+    pkgs.gcc10
   ];
 
   # Sets environment variables in the workspace
@@ -19,6 +23,8 @@
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
       # "vscodevim.vim"
+      "vscjava.vscode-java-pack"
+      "BazelBuild.vscode-bazel"
     ];
 
     # Enable previews
