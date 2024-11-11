@@ -25,6 +25,7 @@
       # "vscodevim.vim"
       "vscjava.vscode-java-pack"
       "BazelBuild.vscode-bazel"
+      "eamodio.gitlens"
     ];
 
     # Enable previews
