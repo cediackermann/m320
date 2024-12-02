@@ -5,7 +5,8 @@ import java.util.Map;
 
 class Solution {
     private final Map<String, Integer> romanLetters = new HashMap<>();
-    public Solution(){
+
+    public Solution() {
         romanLetters.put("I", 1);
         romanLetters.put("V", 5);
         romanLetters.put("X", 10);
@@ -14,17 +15,20 @@ class Solution {
         romanLetters.put("D", 500);
         romanLetters.put("M", 1000);
     }
+
     public int romanToInt(String s) {
         int solution = 0;
         for (int i = 0; i < s.length(); i++) {
             if (i + 1 <= s.length() - 1) {
-                if (this.romanLetters.get(Character.toString(s.charAt(i))) < this.romanLetters.get(Character.toString(s.charAt(i + 1)))) {
-                    solution += this.romanLetters.get(Character.toString(s.charAt(i+1))) - this.romanLetters.get(Character.toString(s.charAt(i)));
+                if (this.romanLetters.get(Character.toString(s.charAt(i))) < this.romanLetters
+                        .get(Character.toString(s.charAt(i + 1)))) {
+                    solution += this.romanLetters.get(Character.toString(s.charAt(i + 1)))
+                            - this.romanLetters.get(Character.toString(s.charAt(i)));
                     i++;
-                } else{
+                } else {
                     solution += this.romanLetters.get(Character.toString(s.charAt(i)));
-                }   
-            } else{
+                }
+            } else {
                 solution += this.romanLetters.get(Character.toString(s.charAt(i)));
             }
         }
